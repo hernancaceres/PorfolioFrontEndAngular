@@ -10,6 +10,9 @@ import { PublicComponent } from './public.component';
 import { SocialComponent } from './header/components/social/social.component';
 import { BannerComponent } from './header/components/banner/banner.component';
 import { AcercaDeComponent } from './acerca-de/containers/acerca-de/acerca-de.component';
+import { ExperienciaComponent } from './experiencia/containers/experiencia/experiencia.component';
+import { EducacionComponent } from './educacion/containers/educacion/educacion.component';
+
 
 
 
@@ -23,6 +26,8 @@ import { AcercaDeComponent } from './acerca-de/containers/acerca-de/acerca-de.co
     SocialComponent,
     BannerComponent,
     AcercaDeComponent,
+    ExperienciaComponent,
+    EducacionComponent,
     
   ],
   imports: [
