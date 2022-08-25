@@ -12,7 +12,9 @@ import { BannerComponent } from './header/components/banner/banner.component';
 import { AcercaDeComponent } from './acerca-de/containers/acerca-de/acerca-de.component';
 import { ExperienciaComponent } from './experiencia/containers/experiencia/experiencia.component';
 import { EducacionComponent } from './educacion/containers/educacion/educacion.component';
+import { CircleProgComponent } from './circle-prog/containers/circle-prog/circle-prog.component';
 
+import { NgCircleProgressModule } from 'ng-circle-progress';
 
 
 
@@ -28,11 +30,13 @@ import { EducacionComponent } from './educacion/containers/educacion/educacion.c
     AcercaDeComponent,
     ExperienciaComponent,
     EducacionComponent,
+    CircleProgComponent,
     
   ],
   imports: [
     PublicRoutingModule,
     SharedModule,
+    NgCircleProgressModule.forRoot({ })
     
   ],
   providers: [],
