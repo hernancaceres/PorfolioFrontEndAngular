@@ -5,7 +5,24 @@ div{
     background-color: rgb(173, 190, 185);
     text-align: center;
 }
+
+/* nombre del programador */
+
 #nombre{
     font-weight: bold;
     margin-top: 30%;
 }
+
+/* foto de perfil */
+
+@media (min-width: 576px) {
+    #fotoperfil {
+        position: absolute;
+        width: 17%;
+        border-radius: 100%;
+        box-shadow: 3px 3px 3px gray;
+        left: 2%;
+        top: 600px;
+    }
+}
+
