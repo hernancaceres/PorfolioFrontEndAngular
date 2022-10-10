@@ -15,6 +15,7 @@ import { EducacionComponent } from './educacion/containers/educacion/educacion.c
 import { CircleProgComponent } from './circle-prog/containers/circle-prog/circle-prog.component';
 import { FooterComponent } from './footer/containers/footer/footer.component';
 import { ProyectosComponent } from './proyectos/containers/proyectos/proyectos.component';
+import { PersonaService } from './service/persona.service';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,9 @@ import { ProyectosComponent } from './proyectos/containers/proyectos/proyectos.c
     SharedModule,
     NgCircleProgressModule.forRoot({ })
   ],
-  providers: [],
+  providers: [
+    PersonaService
+  ],
   exports: []
 })
 
