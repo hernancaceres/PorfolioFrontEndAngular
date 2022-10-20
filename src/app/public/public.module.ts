@@ -16,6 +16,11 @@ import { CircleProgComponent } from './circle-prog/containers/circle-prog/circle
 import { FooterComponent } from './footer/containers/footer/footer.component';
 import { ProyectosComponent } from './proyectos/containers/proyectos/proyectos.component';
 import { PersonaService } from './service/persona.service';
+import { AuthService } from './service/auth.service';
+import { TokenService } from './service/token.service';
+import { interceptorProvider } from './service/intercertor-service';
+import { SExperienciaService } from './service/s-experiencia.service';
+import { NewExperienciaComponent } from './experiencia/componets/new-experiencia/new-experiencia.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +36,7 @@ import { PersonaService } from './service/persona.service';
     CircleProgComponent,
     ProyectosComponent,
     FooterComponent,
+    NewExperienciaComponent,
   ],
   imports: [
     PublicRoutingModule,
@@ -38,7 +44,11 @@ import { PersonaService } from './service/persona.service';
     NgCircleProgressModule.forRoot({ })
   ],
   providers: [
-    PersonaService
+    PersonaService,
+    AuthService,
+    TokenService,
+    interceptorProvider,
+    SExperienciaService
   ],
   exports: []
 })

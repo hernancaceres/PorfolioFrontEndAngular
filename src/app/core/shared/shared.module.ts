@@ -3,6 +3,7 @@ import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http'
 import { CommonModule } from '@angular/common';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -14,14 +15,17 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
   imports: [
     HttpClientModule,
     RouterModule,
-    CommonModule
+    CommonModule,
+    FormsModule
     
   ],
   providers: [],
   exports: [
     HttpClientModule,
     RouterModule,
-    NotFoundComponent
+    NotFoundComponent,
+    FormsModule,
+    CommonModule
     
   ]
 })
