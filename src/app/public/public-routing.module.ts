@@ -5,6 +5,7 @@ import { PublicComponent } from './public.component';
 import { HomeComponent } from './home/containers/home.componet';
 import { LoginComponent } from './login/containers/login.component';
 import { NewExperienciaComponent } from './experiencia/componets/new-experiencia/new-experiencia.component';
+import { EditExperienciaComponent } from './experiencia/componets/edit-experiencia/edit-experiencia.component';
 
 const routes: Routes = [
 
@@ -12,7 +13,8 @@ const routes: Routes = [
       {  path: '', redirectTo: 'home', pathMatch: 'full' },
       {  path: 'home', component: HomeComponent },
       {  path: 'login', component: LoginComponent },
-      {  path: 'nuevaexp', component: NewExperienciaComponent }
+      {  path: 'nuevaexp', component: NewExperienciaComponent },
+      {  path: 'editexp/:id', component: EditExperienciaComponent }
     ] 
   },
 

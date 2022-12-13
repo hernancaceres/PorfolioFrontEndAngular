@@ -21,6 +21,7 @@ import { TokenService } from './service/token.service';
 import { interceptorProvider } from './service/intercertor-service';
 import { SExperienciaService } from './service/s-experiencia.service';
 import { NewExperienciaComponent } from './experiencia/componets/new-experiencia/new-experiencia.component';
+import { EditExperienciaComponent } from './experiencia/componets/edit-experiencia/edit-experiencia.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { NewExperienciaComponent } from './experiencia/componets/new-experiencia
     ProyectosComponent,
     FooterComponent,
     NewExperienciaComponent,
+    EditExperienciaComponent,
   ],
   imports: [
     PublicRoutingModule,
